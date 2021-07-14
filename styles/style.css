@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Montserrat", sans-serif;
+  --inputs-gray: #828282;
+  --h1-cart-item-gray: #4e5150;
+  --form-name-price-gray: #333333;
+  --form-labels-gray: #4f4f4f;
+  --button-price-orange: #f2994a;
+  --footer-gray: #bdbdbd;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.root {
+  max-width: 1440px;
+}
