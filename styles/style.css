@@ -118,6 +118,7 @@ body {
 .default-input {
   margin-bottom: 8px;
   padding: 18px;
+  width: 100%;
   font-size: 16px;
   font-weight: 600;
   padding-left: 2.5em;
@@ -306,8 +307,49 @@ body {
   color: var(--footer-gray);
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
   .main {
     flex-direction: column-reverse;
+  }
+
+  .country-postal-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .checkout {
+    font-size: 24px;
+  }
+
+  .cart-item__name {
+    font-size: 12px;
+  }
+
+  .cart-item__current-price {
+    font-size: 14px;
+  }
+
+  .cart-item__sale-price {
+    font-size: 10px;
+  }
+
+  .price-container {
+    font-size: 14px;
+  }
+
+  .default-input {
+    font-size: 12px;
+  }
+
+  .country-select:invalid {
+    font-size: 12px;
+  }
+
+  .default-input::placeholder {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 12px;
   }
 }
