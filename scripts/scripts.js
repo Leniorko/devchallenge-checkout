@@ -8,6 +8,7 @@ const shippingPrice = +document
 console.log(shippingPrice);
 
 const totalPriceHtml = document.getElementById("total-price");
+const formHtml = document.querySelector(".form");
 
 let total = 0;
 let items = [{}];
@@ -46,3 +47,7 @@ function countTotalPrice() {
 
   totalPriceHtml.innerHTML = `\$${total}`;
 }
+
+formHtml.addEventListener("submit", (event) => {
+  alert("Validation is fine");
+});

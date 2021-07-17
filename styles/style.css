@@ -91,6 +91,7 @@ body {
   display: inline-flex;
   align-items: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .checkbox-label::before {
@@ -190,6 +191,7 @@ body {
   background: transparent;
   background-size: 30px;
   padding-right: 2.5em;
+  cursor: pointer;
 }
 
 .continue-button {
@@ -203,6 +205,7 @@ body {
   border-radius: 12px;
   font-weight: 600;
   outline: none;
+  cursor: pointer;
 }
 
 .continue-button:hover {
@@ -279,6 +282,7 @@ body {
 .cart-item__plus {
   background-color: #e0e0e0;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .price-container {
