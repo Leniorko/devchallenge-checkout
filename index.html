@@ -25,66 +25,116 @@
         <div class="form-container">
           <form action="" class="form">
             <fieldset class="form__contact default-fieldset">
-              <legend>Contact information</legend>
+              <legend class="legend">Contact information</legend>
               <label for="email-input" class="default-label">E-mail</label>
               <input
+                required
                 type="email"
+                placeholder="Enter your email..."
                 name=""
                 id="email-input"
-                class="defautl-input"
+                class="default-input"
               />
               <label for="phone-innput" class="default-label">Phone</label>
-              <input type="text" id="phone-input" class="default-input" />
+              <input
+                required
+                type="text"
+                placeholder="Enter your phone..."
+                id="phone-input"
+                class="default-input"
+              />
             </fieldset>
 
             <fieldset class="form__shipping default-fieldset">
-              <legend>Shipping address</legend>
+              <legend class="legend">Shipping address</legend>
               <label for="full-name-input" class="default-label"
                 >Full name</label
               >
               <input
+                required
                 type="text"
                 name=""
+                placeholder="Enter your full name..."
                 id="full-name-input"
                 class="default-input"
               />
               <label for="address-input" class="default-label">Address</label>
-              <input type="text" name="" id="address" class="default-input" />
+              <input
+                required
+                type="text"
+                placeholder="Your address.."
+                name=""
+                id="address"
+                class="default-input"
+              />
               <label for="city-input" class="default-label">City</label>
               <input
+                required
                 type="text"
                 name=""
+                placeholder="Your city.."
                 id="city-input"
                 class="default-input"
               />
               <div class="country-postal-container">
-                <label for="country-input" class="default-label">Country</label>
-                <input
-                  type="text"
-                  name=""
-                  id="country-input"
-                  class="default-input"
-                />
-                <label for="postal-input" class="default-input"
-                  >Postal code</label
-                >
-                <input
-                  type="text"
-                  name=""
-                  id="postal-input"
-                  class="default-input"
-                />
+                <div class="country-container">
+                  <label for="country-input" class="default-label"
+                    >Country</label
+                  >
+                  <div class="select-wrapper">
+                    <img
+                      src="./img/icons/public_black_24dp.svg"
+                      alt=""
+                      class="planet"
+                    />
+                    <select
+                      name=""
+                      placeholder="Your country.."
+                      id="country-input"
+                      class="default-input country-select"
+                      required
+                    >
+                      <option value="" disabled selected hidden>
+                        Your country...
+                      </option>
+                      <option value="Russia">Russia</option>
+                      <option value="USA">USA</option>
+                      <option value="Mexica">Mexica</option>
+                    </select>
+                    <img
+                      src="./img/icons/keyboard_arrow_down_black_24dp.svg"
+                      alt=""
+                      class="arrow"
+                    />
+                  </div>
+                </div>
+
+                <div class="postal-container">
+                  <label for="postal-label" class="default-label"
+                    >Postal code</label
+                  >
+                  <input
+                    required
+                    type="text"
+                    name=""
+                    class="default-input"
+                    placeholder="Your postal code.."
+                    id="postal-input"
+                  />
+                </div>
               </div>
             </fieldset>
-            <input
-              type="checkbox"
-              name=""
-              id="save-input"
-              class="default-input"
-            />
-            <label for="save-input" class="default-label"
-              >Save this information for next time</label
-            >
+            <div class="checkbox-container">
+              <input
+                type="checkbox"
+                name=""
+                id="save-input"
+                class="default-input checkbox-default"
+              />
+              <label for="save-input" class="default-label checkbox-label"
+                >Save this information for next time</label
+              >
+            </div>
 
             <button class="continue-button">Continue</button>
           </form>
@@ -108,47 +158,44 @@
                 <img
                   src="./img/icons/add_black_24dp.svg"
                   alt=""
-                  class="cart-item__item__plus"
+                  class="cart-item__plus"
                 />
               </div>
             </div>
-
-            <div class="cart">
-              <div class="cart-item">
-                <img src="./img/photo2.png" alt="" class="cart-item__img" />
-                <div class="cart-item__info-container">
-                  <p class="cart-item__name">Levi Shoes</p>
-                  <div class="cart-item__price-container">
-                    <p class="cart-item__current-price">$74.99</p>
-                    <p class="cart-item__sale-price">$124.99</p>
-                  </div>
-                  <div class="cart-item__item-counter">
-                    <img
-                      src="./img/icons/remove_black_24dp.svg"
-                      alt=""
-                      class="cart-item__minus"
-                    />
-                    <p class="cart-item__count">1</p>
-                    <img
-                      src="./img/icons/add_black_24dp.svg"
-                      alt=""
-                      class="cart-item__item__plus"
-                    />
-                  </div>
-                </div>
-
-                <hr class="hr-default" />
-                <div class="price-container">
-                  <p class="cart__text">Shipping</p>
-                  <p class="cart__price">$19</p>
-                </div>
-                <hr class="hr-default" />
-                <div class="price-container">
-                  <p class="cart__text">Total</p>
-                  <p class="cart__price">$148.98</p>
-                </div>
+          </div>
+          <div class="cart-item">
+            <img src="./img/photo2.png" alt="" class="cart-item__img" />
+            <div class="cart-item__info-container">
+              <p class="cart-item__name">Levi Shoes</p>
+              <div class="cart-item__price-container">
+                <p class="cart-item__current-price">$74.99</p>
+                <p class="cart-item__sale-price">$124.99</p>
+              </div>
+              <div class="cart-item__item-counter">
+                <img
+                  src="./img/icons/remove_black_24dp.svg"
+                  alt=""
+                  class="cart-item__minus"
+                />
+                <p class="cart-item__count">1</p>
+                <img
+                  src="./img/icons/add_black_24dp.svg"
+                  alt=""
+                  class="cart-item__plus"
+                />
               </div>
             </div>
+          </div>
+
+          <hr class="hr-default" />
+          <div class="price-container">
+            <p class="cart__text">Shipping</p>
+            <p class="cart__price" id="shipping-price">$19</p>
+          </div>
+          <hr class="hr-default" />
+          <div class="price-container">
+            <p class="cart__text">Total</p>
+            <p class="cart__price" id="total-price">$148.98</p>
           </div>
         </div>
       </div>
@@ -160,5 +207,6 @@
         - devChallenges.io
       </div>
     </div>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
